@@ -2,13 +2,18 @@ import {
     createBrowserRouter,
   } from "react-router-dom";
 
-import Main from "../components/Layouts/Main";
-
+import Main from "../Layouts/Main";
+import Home from "../pages.jsx/Home/Home/Home";
   
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <div> <Main/> </div>,
+      element: <Main/> ,
+      children: [
+        {
+         path: "/",
+         element: <Home/>,
+        },]
     },
 
   ]);
