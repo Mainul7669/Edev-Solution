@@ -1,4 +1,3 @@
-import Banner from "../Banner/Banner";
 import FAQ from "../FAQ/FAQ";
 
 const Home = () => {
