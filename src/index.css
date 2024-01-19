@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.secondary-color{
+    color: #F86518;
+}
+.primary-color{
+    color: #05345E;
+}

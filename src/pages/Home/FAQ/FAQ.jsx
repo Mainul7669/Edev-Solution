@@ -4,14 +4,14 @@ const FAQ = () => {
   return (
     <div className="max-w-screen-xl lg:mx-auto mx-4">
       <div className="ms-4">
-        <p className="font-extrabold text-pink-500">WHY CHOOSE US</p>
-        <h1 className="lg:text-5xl text-xl pt-1 font-bold lg:mb-10">
+        <p className="font-extrabold text-[#F86518]">WHY CHOOSE US</p>
+        <h1 className="lg:text-5xl text-xl pt-1 font-bold lg:mb-10 text-[#05345E]">
           We Provide Complete,End-to-End <br />
           Business Solutions{" "}
         </h1>
       </div>
       {/* flex */}
-      <div className="lg:flex gap-20">
+      <div className="lg:flex  gap-20">
         <div className="my-4 lg:w-[60%]">
           <div className="collapse collapse-plus border-b">
             <input type="radio" name="my-accordion-3" />
