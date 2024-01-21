@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -42,23 +41,21 @@ const Navbar = () => {
                 Dashboard
               </Link>
             </li>
-            <li className="mx-auto">
-              <a href="#contact" onClick={() => scrollToSection("contact")}>
-                Contact Us
-              </a>
-            </li>
+            <Link to="/contact" className="mx-auto">
+              <li className="mx-auto">
+                <a href="#contact" onClick={() => scrollToSection("contact")}>
+                  Contact Us
+                </a>
+              </li>
+            </Link>
           </ul>
 
-      
-            <Link to="login">
-              <button className="bg-[#F86518] text-[#FFFFFF] hover:bg-[#05345E] py-2 px-6 rounded text-sm font-semibold transition duration-300 ease-in-out transform hover:scale-105">
-                {" "}
-                Login{" "}
-              </button>
-            </Link>
-          
-      
-
+          <Link to="login">
+            <button className="bg-[#F86518] text-[#FFFFFF] hover:bg-[#05345E] py-2 px-6 rounded text-sm font-semibold transition duration-300 ease-in-out transform hover:scale-105">
+              {" "}
+              Login{" "}
+            </button>
+          </Link>
         </div>
 
         <label className="swap-rotate swap btn-ghost btn-circle btn ml-2 bg-[#fff8f5] lg:hidden">

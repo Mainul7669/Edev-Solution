@@ -1,9 +1,7 @@
-import React from "react";
 import {
   FaArtstation,
   FaChartLine,
   FaFileInvoice,
-  
   FaLaptopCode,
   FaMobileAlt,
   FaNetworkWired,
@@ -11,7 +9,7 @@ import {
 
 const Services = () => {
   return (
-    <div className="max-w-screen-xl lg:mx-auto mx-4 lg:my-40 my-12">
+    <div className="max-w-screen-xl lg:mx-auto mx-4 lg:my-20 my-12">
       {/* <div className="text-center">
         <h2 className="text-xl lg:text-5xl font-semibold mb-1 lg:mb-5">
           Featured service that we Provide
@@ -30,9 +28,10 @@ const Services = () => {
       {/* card */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
         <div
-          className="service card w-full lg:w-full bg-fuchsia-50 border border-pink-100  hover:bg-[#05345E] hover:text-white
+          className="service card w-full lg:w-full bg-fuchsia-50 border  hover:bg-[#05345E] hover:text-white
             hover:border  hover:border-black
-            bg-transparent hover:transition-transform duration-200 hover:scale-110"
+            bg-transparent 
+            py-2 px-6 rounded text-sm font-semibold transition duration-300 ease-in-out transform hover:scale-105"
         >
           <figure className="px-10 pt-10">
             <span className="text-6xl">
@@ -48,9 +47,10 @@ const Services = () => {
           </p>
         </div>
         <div
-          className="service card w-full lg:w-full bg-fuchsia-50 border border-pink-100  hover:bg-[#05345E] hover:text-white
+          className="service card w-full lg:w-full bg-fuchsia-50 border  hover:bg-[#05345E] hover:text-white
             hover:border  hover:border-black
-            bg-transparent hover:transition-transform duration-200 hover:scale-110"
+            bg-transparent 
+            py-2 px-6 rounded text-sm font-semibold transition duration-300 ease-in-out transform hover:scale-105"
         >
           <figure className="px-10 pt-10">
             <span className="text-6xl">
@@ -67,9 +67,10 @@ const Services = () => {
         </div>
 
         <div
-          className="service card w-full lg:w-full bg-fuchsia-50 border border-pink-100  hover:bg-[#05345E] hover:text-white
+          className="service card w-full lg:w-full bg-fuchsia-50 border  hover:bg-[#05345E] hover:text-white
             hover:border  hover:border-black
-            bg-transparent hover:transition-transform duration-200 hover:scale-110"
+            bg-transparent 
+            py-2 px-6 rounded text-sm font-semibold transition duration-300 ease-in-out transform hover:scale-105"
         >
           <figure className="px-10 pt-10">
             <span className="text-6xl">
@@ -86,9 +87,10 @@ const Services = () => {
         </div>
 
         <div
-          className="service card w-full lg:w-full bg-fuchsia-50 border border-pink-100  hover:bg-[#05345E] hover:text-white
+          className="service card w-full lg:w-full bg-fuchsia-50 border  hover:bg-[#05345E] hover:text-white
             hover:border  hover:border-black
-            bg-transparent hover:transition-transform duration-200 hover:scale-110"
+            bg-transparent 
+            py-2 px-6 rounded text-sm font-semibold transition duration-300 ease-in-out transform hover:scale-105"
         >
           <figure className="px-10 pt-10">
             <span className="text-6xl">
@@ -105,9 +107,10 @@ const Services = () => {
         </div>
 
         <div
-          className="service card w-full lg:w-full bg-fuchsia-50 border border-pink-100  hover:bg-[#05345E] hover:text-white
+          className="service card w-full lg:w-full bg-fuchsia-50 border  hover:bg-[#05345E] hover:text-white
             hover:border  hover:border-black
-            bg-transparent hover:transition-transform duration-200 hover:scale-110"
+            bg-transparent 
+            py-2 px-6 rounded text-sm font-semibold transition duration-300 ease-in-out transform hover:scale-105"
         >
           <figure className="px-10 pt-10">
             <span className="text-6xl">
@@ -124,9 +127,10 @@ const Services = () => {
         </div>
 
         <div
-          className="service card w-full lg:w-full bg-fuchsia-50 border border-pink-100  hover:bg-[#05345E] hover:text-white
+          className="service card w-full lg:w-full bg-fuchsia-50 border  hover:bg-[#05345E] hover:text-white
             hover:border  hover:border-black
-            bg-transparent hover:transition-transform duration-200 hover:scale-110"
+            bg-transparent 
+            py-2 px-6 rounded text-sm font-semibold transition duration-300 ease-in-out transform hover:scale-105"
         >
           <figure className="px-10 pt-10">
             <span className="text-6xl">

@@ -1,4 +1,3 @@
-import React from "react";
 import faqImage from "../../../assets/design/FAQ/faq.jpg";
 const FAQ = () => {
   return (
