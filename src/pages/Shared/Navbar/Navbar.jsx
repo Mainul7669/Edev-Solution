@@ -36,11 +36,13 @@ const Navbar = () => {
                 Our Portfolio
               </a>
             </li>
-            <li className="mx-auto">
-              <Link to="dashboard" onClick={() => scrollToSection("team")}>
-                Dashboard
-              </Link>
-            </li>
+            <Link to="/team" className="mx-auto">
+              <li className="mx-auto">
+                <a href="#team" onClick={() => scrollToSection("team")}>
+                  Team
+                </a>
+              </li>
+            </Link>
             <Link to="/contact" className="mx-auto">
               <li className="mx-auto">
                 <a href="#contact" onClick={() => scrollToSection("contact")}>

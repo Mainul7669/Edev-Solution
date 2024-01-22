@@ -72,11 +72,14 @@ const Contact = () => {
           </div>
         </div>
       </div> */}
+
       {/* bellow */}
-      <div className="max-w-screen-xl lg:mx-auto mx-4 lg:my-28">
+
+      <div className="max-w-screen-xl lg:mx-auto mx-4 lg:mt-28 lg:mb-40">
         {/*  */}
         <div>
-          <div className="rounded-xl shadow-xl  border bg-fuchsia-50">
+          {/* <div className="rounded-xl lg:relative shadow-xl  border bg-base-100 "> */}
+          <div className="rounded-xl shadow-xl  border bg-base-100 ">
             <div className="lg:flex gap-12  py-14 lg:py-40 ">
               <div className="lg:ms-12 ps-4 w-full lg:w-[40%]">
                 <div>
@@ -189,60 +192,61 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="lg:flex gap-8 lg:mx-16">
-          <div
-            className="card  w-full  border my-4 shadow-md service  lg:w-full bg-fuchsia-50   hover:bg-[#05345E] hover:text-white
+          <div className="lg:flex gap-8  lg:mx-16 ">
+            {/* <div className="lg:flex gap-8 lg:absolute lg:right-[520px]  lg:top-0 lg:mx-16 "> */}
+            <div
+              className="card  w-full  border my-4 shadow-md service  lg:w-full bg-white   hover:bg-[#05345E] hover:text-white
             hover:border  hover:border-black
             bg-transparent 
-            py-2 px-6 rounded text-sm font-semibold transition duration-300  ease-in-out transform hover:scale-105 "
-          >
-            <div className=" text-center py-9">
-              <figure className="px-10 pt-10">
-                <span className="text-4xl border-2 hover:border-white hover:border-2 border-[#F86518]  rounded-full  p-8">
-                  <FaPhoneAlt />
-                </span>
-              </figure>
-              <p className="text-lg  font-bold ">Phone No</p>
-              <p className="text-lg font-semibold opacity-60 pt-1">
-                +8801758516069
-              </p>
+             px-6 rounded text-sm font-semibold transition duration-300  ease-in-out transform hover:scale-105 "
+            >
+              <div className=" text-center py-9">
+                <figure className="px-10 pt-10">
+                  <span className="text-4xl border-2 hover:border-white hover:border-2 border-[#F86518]  rounded-full  p-8">
+                    <FaPhoneAlt />
+                  </span>
+                </figure>
+                <p className="text-lg  font-bold ">Phone No</p>
+                <p className="text-lg font-semibold opacity-60 pt-1">
+                  +8801758516069
+                </p>
+              </div>
             </div>
-          </div>
-          <div
-            className="card  w-full  border my-4 shadow-md service  lg:w-full bg-fuchsia-50   hover:bg-[#05345E] hover:text-white
+            <div
+              className="card  w-full  border my-4 shadow-md service  lg:w-full bg-white   hover:bg-[#05345E] hover:text-white
             hover:border  hover:border-black
             bg-transparent 
-            py-2 px-6 rounded text-sm font-semibold transition duration-300  ease-in-out transform hover:scale-105"
-          >
-            <div className=" text-center py-9">
-              <figure className="px-10 pt-10">
-                <span className="text-4xl border-2 hover:border-white hover:border-2 border-[#F86518]  rounded-full  p-8">
-                  <FaMapMarked />
-                </span>
-              </figure>
-              <p className="text-lg  font-bold ">Location</p>
-              <p className="text-lg font-semibold opacity-60 pt-1">
-                Bangladesh
-              </p>
+             px-6 rounded text-sm font-semibold transition duration-300  ease-in-out transform hover:scale-105"
+            >
+              <div className=" text-center py-9">
+                <figure className="px-10 pt-10">
+                  <span className="text-4xl border-2 hover:border-white hover:border-2 border-[#F86518]  rounded-full  p-8">
+                    <FaMapMarked />
+                  </span>
+                </figure>
+                <p className="text-lg  font-bold ">Location</p>
+                <p className="text-lg font-semibold opacity-60 pt-1">
+                  Bangladesh
+                </p>
+              </div>
             </div>
-          </div>
-          <div
-            className="card  w-full  border my-4 shadow-md service  lg:w-full bg-fuchsia-50   hover:bg-[#05345E] hover:text-white
+            <div
+              className="card  w-full  border my-4 shadow-md service  lg:w-full bg-white   hover:bg-[#05345E] hover:text-white
             hover:border  hover:border-black
             bg-transparent 
-            py-2 px-6 rounded text-sm font-semibold transition duration-300  ease-in-out transform hover:scale-105 "
-          >
-            <div className=" text-center py-9">
-              <figure className="px-10 pt-10">
-                <span className="text-4xl border-2 hover:border-white hover:border-2 border-[#F86518]  rounded-full  p-8">
-                  <FaEnvelope />
-                </span>
-              </figure>
-              <p className="text-lg  font-bold ">Email</p>
-              <p className="text-lg font-semibold opacity-60 pt-1">
-                edevsolution@gmail.com
-              </p>
+             px-6 rounded text-sm font-semibold transition duration-300  ease-in-out transform hover:scale-105 "
+            >
+              <div className=" text-center py-9">
+                <figure className="px-10 pt-10">
+                  <span className="text-4xl border-2 hover:border-white hover:border-2 border-[#F86518]  rounded-full  p-8">
+                    <FaEnvelope />
+                  </span>
+                </figure>
+                <p className="text-lg  font-bold ">Email</p>
+                <p className="text-lg font-semibold opacity-60 pt-1">
+                  edevsolution@gmail.com
+                </p>
+              </div>
             </div>
           </div>
         </div>
