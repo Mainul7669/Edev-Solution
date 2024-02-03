@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -15,10 +14,10 @@ const Navbar = () => {
 
   return (
     <div className="bg-white text-[#474747] flex flex-wrap justify-center">
-      <nav className="navbar sticky top-0 z-10 bg-white shadow-md">
+      <nav className="navbar sticky top-0 z-10 bg-white shadow-md ">
         <div className="flex-1">
           <a href="/">
-            <img src="/src/assets/logo/logo.jpg" alt="Logo" className="h-12" />
+            <img src="/src/assets/logo/logo.jpg" alt="Logo" className="h-12 lg:ml-12" />
           </a>
         </div>
         <div
@@ -26,38 +25,32 @@ const Navbar = () => {
             navToggle ? "left-0" : "left-[-120%]"
           } top-[4.5rem] flex w-full flex-col bg-[#fff8f5] pb-3 pt-2 transition-all duration-300 lg:static lg:w-[unset] lg:flex-row lg:bg-transparent lg:pb-0 lg:pt-0 dark:lg:bg-transparent`}
         >
-          <ul className="  gap-4 menu menu-horizontal flex-col px-1 lg:flex-row font-semibold">
+          <ul className="  gap-4 menu menu-horizontal flex-col px-1 lg:flex-row font-semibold lg:mr-5">
             <li className="mx-auto">
               <Link to="/" onClick={() => scrollToSection("home")}>
                 Home
               </Link>
             </li>
             <li className="mx-auto">
-              <a href="#portfolio" onClick={() => scrollToSection("portfolio")}>
+              <a href="/portfolio" onClick={() => scrollToSection("portfolio")}>
                 Our Portfolio
               </a>
             </li>
-            <li className="mx-auto">
-              <Link to="dashboard" onClick={() => scrollToSection("team")}>
-                Dashboard
-              </Link>
-            </li>
-            <li className="mx-auto">
-              <a href="#contact" onClick={() => scrollToSection("contact")}>
-                Contact Us
-              </a>
-            </li>
-          </ul>
-
-      
-            <Link to="login">
-              <button className="bg-[#F86518] text-[#FFFFFF] hover:bg-[#05345E] py-2 px-6 rounded text-sm font-semibold transition duration-300 ease-in-out transform hover:scale-105">
-                {" "}
-                Login{" "}
-              </button>
+            {/* <Link to="/team" className="mx-auto">
+              <li className="mx-auto">
+                <a href="#team" onClick={() => scrollToSection("team")}>
+                  Team
+                </a>
+              </li>
+            </Link> */}
+            <Link to="/contact" className="mx-auto">
+              <li className="mx-auto">
+                <a href="#contact" onClick={() => scrollToSection("contact")}>
+                  Contact Us
+                </a>
+              </li>
             </Link>
-          
-      
+          </ul>
 
         </div>
 

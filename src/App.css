@@ -43,4 +43,98 @@
 
   
   
+  /* 2nd try */
+
+  .image-wrap {
+    width: 3150px;
+    height: 380px;
+    overflow: hidden;
+    margin: 20px;
+  }
+  .image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: all 3s ease-in-out;
+  }
+  .image-wrap:hover img {
+    object-position: bottom center;
+  }
+
+  /* Media query for smaller devices */
+  @media (max-width: 768px) {
+    .image-wrap {
+      width: 100%;
+      height: 370px;
+      margin: 10px 0;
+    }
+    .image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transition: all 2s ease-in-out;
+    }
+  }
+
+
+
+         
+  .btn-grad {
+    position: relative;
+    background-image: linear-gradient(to right, #05345E 0%, #bfe9ff 51%, #05345E 100%);
+    margin: 10px;
+    padding: 8px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    opacity: 0;
+    transform: translateX(50px); /* Move the button off-screen initially */
+    animation: slideIn 1.5s forwards, colorTransition 2.5s infinite alternate; /* Use the slideIn animation and colorTransition animation */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px); /* Move from right to left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Move to the original position */
+    }
+}
+
+@keyframes colorTransition {
+    0% {
+        background-position: left center;
+        color: #fff;
+    }
+    100% {
+        background-position: right center;
+        color: #fff;
+    }
+}
+
+.btn-grad::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 50px 5px 0; /* Adjust the values as needed */
+    border-color: transparent #bfe9ff transparent transparent; /* Adjust the color to match your background color */
+}
+
+
+
+
+
   
+ 

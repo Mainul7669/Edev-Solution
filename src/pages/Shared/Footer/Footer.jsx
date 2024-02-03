@@ -1,20 +1,24 @@
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-[#05345E] text-white">
+        <footer className="footer p-10 bg-base-300 text-base-content">
+          <aside>
+   <img className="w-24" src="src/assets/logo/logo-removebg-preview .png" alt="" />
+    <p className="font-semibold leading-3">Your First Bite Of Solution</p>
+  </aside> 
   <nav>
     <header className="footer-title">Services</header> 
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
+    <a className="link link-hover">Web Design</a>
+    <a className="link link-hover">Web Development</a>
+    <a className="link link-hover">App Development</a>
     <a className="link link-hover">Advertisement</a>
   </nav> 
   <nav>
-    <header className="footer-title">Company</header> 
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
+    <header className="footer-title ">Company</header> 
+    <a href="/" className="link link-hover font-semibold">Home</a>
+    <a href="/" className="link link-hover font-semibold">About us</a>
+    <a href="/contact" className="link link-hover font-semibold">Contact</a>
+    <a href="/portfolio" className="link link-hover font-semibold">Our Works</a>
   </nav> 
   <nav>
     <header className="footer-title">Social</header> 

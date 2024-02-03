@@ -35,10 +35,10 @@ const Review = () => {
 
 <div className="hero">
   <div className="hero-content flex-col lg:flex-row gap-16">
-    <img src="https://img.freepik.com/premium-photo/close-up-portrait-confident-indian-financial-expert-office-worker-sitting-table-formal-suit_769609-327.jpg" className="max-w-sm rounded-lg shadow-lg" />
+    <img src="https://img.freepik.com/premium-photo/close-up-portrait-confident-indian-financial-expert-office-worker-sitting-table-formal-suit_769609-327.jpg" className="max-w-sm rounded-lg shadow-lg hidden lg:block" />
     <div>
       <h1 className="text-3xl font-bold">Happy clients said to us they are satisfied. </h1>
-      <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <p className="py-6">We are here today because of our partners support and we are proud to provide the best services to them. Let's join us in this journey of making success stories together.</p>
     </div>
   </div>
 </div>
@@ -53,6 +53,7 @@ const Review = () => {
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center ">
                 {/* Image */}
+                <div>
                 <img
                   src="src/assets/Ellipse 2.png"
                   alt="Card Image"
@@ -60,6 +61,7 @@ const Review = () => {
                   height="40px"
                   className="mr-4"
                 />
+                </div>
 
                 {/* Title and Subtitle */}
                 <div>
@@ -96,7 +98,7 @@ const Review = () => {
               <div className="flex items-center ">
                 {/* Image */}
                 <img
-                  src="src/assetssrc/assets/Ellipse 2.png"
+                  src="src/assets/Ellipse 2.png"
                   alt="Card Image"
                   width="40px"
                   height="40px"
