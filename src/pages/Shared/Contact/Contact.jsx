@@ -1,3 +1,6 @@
+import emailjs from 'emailjs-com';
+import Swal from "sweetalert2";
+
 import  { useState } from "react";
 import {
   FaEnvelope,
@@ -5,43 +8,71 @@ import {
   FaInstagram,
   FaLinkedin,
   FaMapMarked,
-  FaPhone,
   FaPhoneAlt,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-// .secondary-color{
-//     color: #F86518;
-// }
-// .primary-color{
-//     color: #05345E;
-// }
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
 
-    // Send form data to your email address
-    const formData = {
-      name,
-      email,
-      subject,
-      message,
+    const handleSubmit = (e) => {
+      e.preventDefault();
+  
+      // Set up your Email.js credentials
+      const emailJsParams = {
+        serviceId: 'service_sr2jkyq',
+        templateId: 'template_4x6qmjo',
+        userId: 'I4EVhJn5ZVToe3T0K',
+      };
+  
+      // Prepare the data to be sent
+      const emailData = {
+        to_name: 'Edev-Solution', // Customize as needed
+        from_name: name,
+        from_email: email,
+        subject,
+        message,
+      };
+  
+      emailjs.send(
+        emailJsParams.serviceId,
+        emailJsParams.templateId,
+        emailData,
+        emailJsParams.userId
+      )
+        .then((response) => {
+          console.log('Email sent successfully:', response);
+          // Display success message with SweetAlert2
+          Swal.fire({
+            icon: 'success',
+            title: 'Email Sent Successfully!',
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        })
+        .catch((error) => {
+          console.error('Email send failed:', error);
+          // Display error message with SweetAlert2
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong! Please try again.',
+          });
+        })
+        .finally(() => {
+          // Clear form fields after submission
+          setName("");
+          setEmail("");
+          setSubject("");
+          setMessage("");
+        });
     };
-
-    // Here you can implement the logic to send the form data via email
-    // using libraries like Nodemailer or by making an API request to a server
-
-    // Clear form fields after submission
-    setName("");
-    setEmail("");
-    setSubject("");
-    setMessage("");
-  };
+    
   return (
       <div className="min-h-screen">
 
@@ -56,7 +87,7 @@ const Contact = () => {
                     Meet Our Profrssionals
                   </p>
                   <h1 className="lg:text-5xl text-xl pt-1 font-bold lg:mb-4  text-[#05345E]">
-                    We'd Love to Hear From You
+                    We&apos;d Love to Hear From You
                   </h1>
                   <p className="text-lg font-semibold opacity-70">
                     if you need information or support feel free <br /> to
